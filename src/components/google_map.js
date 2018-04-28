@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class GoogleMap extends Component {
   componentDidMount() {
-    new google.maps.Map(this.refs.map, {
+    new google.maps.Map(this.refs.map, { // eslint-disable-line
       zoom: 12,
       center: {
         lat: this.props.lat,
-        lgn: this.props.lon
+        lng: this.props.lon
       }
     });
   }

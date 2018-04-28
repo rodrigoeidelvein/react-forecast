@@ -13,6 +13,11 @@ injectGlobal`
   svg {
     height: 150px;
   }
+
+  td:first-of-type, td:first-of-type > div {
+    height: 200px;
+    width: 250px;
+  }
 `
 
 class App extends Component {
